@@ -3,7 +3,7 @@
 <% if SiteSetting.tvms_amp_domain != "" %>
 <link rel="amphtml" href="<%= SiteSetting.tvms_amp_domain %>/t/<%= @topic_view.topic.slug %>/<%= @topic_view.topic.id %>">
 <% else %>
-<link rel="amphtml" href="<%= @topic_view.topic.url.sub('https://', 'https://amp.') %>">
+<link rel="amphtml" href="<%= @topic_view.topic.url %>?amp=true">
 <% end %>
 <% end %>
 <% end %>
