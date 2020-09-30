@@ -2,5 +2,5 @@ plugins:
   tvms_amp_enabled:
     default: true
   tvms_amp_domain:
-    default: ""
+    default: "https://howtodiscuss.com"
     client: true
