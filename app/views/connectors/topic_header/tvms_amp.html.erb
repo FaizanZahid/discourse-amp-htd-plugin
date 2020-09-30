@@ -1,9 +1,9 @@
 <% if @topic_view %>
 <% if SiteSetting.tvms_amp_enabled? %>
 <% if SiteSetting.tvms_amp_domain != "" %>
-<link rel="amphtml" href="<%= SiteSetting.tvms_amp_domain %>/t/<%= @topic_view.topic.slug %>/<%= @topic_view.topic.id %>?amp=true">
+<link rel="amphtml" href="<%= SiteSetting.tvms_amp_domain %>/t/<%= @topic_view.topic.slug %>/<%= @topic_view.topic.id %>?amp=1">
 <% else %>
-<link rel="amphtml" href="<%= @topic_view.topic.url %>?amp=true">
+<link rel="amphtml" href="<%= @topic_view.topic.url %>?amp=1">
 <% end %>
 <% end %>
 <% end %>
